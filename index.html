@@ -194,7 +194,7 @@
 
         .ripple circle {
             fill: rgba(255, 255, 255, 0.12);
-            animation: rippleAnim 6s infinite linear;
+            animation: rippleAnim 8s infinite linear;
         }
 
         @keyframes rippleAnim {
@@ -224,8 +224,8 @@
                 <div class="flex items-center">
                     <!-- TEDx Logo moved to top left corner -->
                     <div class="flex-shrink-0 flex items-center h-16">
-                        <img src="assets\logo.png"
-                            alt="TEDxJSS Logo" class="h-14 w-auto object-contain" style="max-height:56px;">
+                        <img src="assets\logo.png" alt="TEDxJSS Logo" class="h-14 w-auto object-contain"
+                            style="max-height:56px;">
                     </div>
                 </div>
                 <div class="hidden md:block">
@@ -327,9 +327,11 @@
                 </p>
 
                 <div class="dark-glass p-8 rounded-2xl mb-12 max-w-4xl mx-auto border border-gray-700">
-                    <img src="assets\Banner.jpg"
-                        alt="TEDxJSS Banner" class="w-full h-auto rounded-xl mx-auto">
+                    <img src="assets\Banner.jpg" alt="TEDxJSS Banner" class="w-full h-auto rounded-xl mx-auto">
                 </div>
+
+
+
 
                 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <button
@@ -348,21 +350,39 @@
             </svg>
         </section>
 
-       
+
+
         <!-- Quick Info -->
         <section class="py-20 bg-gray-800 relative">
-            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-transparent "></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-transparent ">
+
+            </div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-4xl font-bold text-center mb-10"
                     style="background: none; background-image: linear-gradient(90deg, #ff4444 60%, #cc3333 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; border-radius: 0.75rem; padding: 0.5rem 0;">
                     Event Details
                 </h2>
-                <div class="grid md:grid-cols-3 gap-8">
+
+                <div
+                    class="dark-glass p-8 rounded-2xl text-center card-hover transition-all duration-300 border border-gray-700">
+                    <div class="text-6xl mb-6">🎨</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Theme</h3>
+                    <p class="text-gray-300 leading-relaxed  ">
+                        Breaking Silence: Voices That Need to Be Heard
+                    </p>
+                    <div class="mt-6 w-16 h-1 ted-red-bg mx-auto rounded-full"></div>
+                </div>
+
+                <br>
+
+                <div class="grid md:grid-cols-2 gap-8">
+
                     <div
                         class="dark-glass p-8 rounded-2xl text-center card-hover transition-all duration-300 border border-gray-700">
                         <div class="text-6xl mb-6">📅</div>
                         <h3 class="text-2xl font-semibold mb-4 text-white">Date</h3>
-                        <p class="text-gray-300 leading-relaxed">Friday, January 9, 2026 </p> <p>
+                        <p class="text-gray-300 leading-relaxed">Friday, January 9, 2026 </p>
+                        <p>
                             Click Here to add to calender
                         </p>
                         <div class="mt-6 w-16 h-1 ted-red-bg mx-auto rounded-full"></div>
@@ -372,32 +392,69 @@
                         <div class="text-6xl mb-6">🕐</div>
                         <h3 class="text-2xl font-semibold mb-4 text-white">Time</h3>
                         <p class="text-gray-300 leading-relaxed">
-                            From 1:00 pm to 4:00 pm (PLace holder)</p>
+                            From 1:00 pm to 4:00 pm </p>
                         <div class="mt-6 w-16 h-1 ted-red-bg mx-auto rounded-full"></div>
                     </div>
                     <div
                         class="dark-glass p-8 rounded-2xl text-center card-hover transition-all duration-300 border border-gray-700">
-                        <div class="text-6xl mb-6">📍</div>
+                        
                         <h3 class="text-2xl font-semibold mb-4 text-white">Venue</h3>
-                        <p class="text-gray-300 leading-relaxed">Auditorium, JSS International School, JVC, Dubai</p><p>
+                        <p class="text-gray-300 leading-relaxed">Auditorium, JSS International School, JVC, Dubai</p>
+                        <p>
                             click here to open in google maps
                         </p>
                         <div class="mt-6 w-16 h-1 ted-red-bg mx-auto rounded-full"></div>
                     </div>
+                    <div
+                        class="dark-glass p-8 rounded-2xl text-center card-hover transition-all duration-300 border border-gray-700">
+                        <div class="text-6xl mb-6">💺</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Seats</h3>
+                        <p class="text-gray-300 leading-relaxed">Upto 100 Seats for Audience memebers</p>
+                        <p>
+                            Inquiry for tickets here
+                        </p>
+                        <div class="mt-6 w-16 h-1 ted-red-bg mx-auto rounded-full"></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+
+            
+
+            <hr class="my-16 border-gray-700">
+            <!-- TEDx required description on homepage -->
+            <section class="max-w-4xl mx-auto my-8 p-6 dark-glass rounded-xl border border-gray-700">
+                <h2 class="text-2xl font-bold mb-4 gradient-text">What is TEDx?</h2>
+                <p class="text-gray-300 mb-2">
+                    In the spirit of discovering and spreading ideas, TED has created a program called TEDx. TEDx is
+                    a program of
+                    local, self-organized events that bring people together to share a TED-like experience. Our
+                    event is called
+                    TEDxJSS International School Youth, where x = independently organized TED event. At our TEDxJSS
+                    International
+                    School Youth event, TED Talks video and live speakers will combine to spark deep discussion and
+                    connection in a
+                    small group. The TED Conference provides general guidance for the TEDx program, but individual
+                    TEDx events,
+                    including ours, are self-organized.
+                    <a href="https://www.ted.com/about/programs-initiatives/tedx-program" class="text-red-400 underline"
+                        target="_blank">Learn more about TEDx</a>
+                </p>
+            </section>
+
+    </div>
+
+
+    </section>
     </div>
 
 
 
     <!-- About Tedx Page -->
     <div id="about" class="page">
-        <section class="py-20 bg-gray-900 relative min-h-screen">
-            <div class="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent"></div>
-            <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+        <section class="py-20 bg-gray-900 relative">
+            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-red-900/10 to-transparent"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-10">
                         <span class="gradient-text">About</span> <span class="text-white">TEDxJSS International School
                             Youth</span>
                     </h1>
@@ -407,7 +464,7 @@
                         fostering creativity, innovation, and leadership among students.</p>
                 </div>
 
-                <div class="space-y-12 p-20 ">
+                <div class="space-y-12  ">
                     <!-- Mission Section -->
                     <div class="dark-glass p-10 rounded-3xl border border-gray-700 hover-glow mb-8">
                         <div class="flex items-center mb-6">
@@ -426,9 +483,11 @@
 
                     <!-- What is TEDx Section -->
                     <div class="grid md:grid-cols-2 gap-8 mb-8">
-                        <div class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
+                        <div
+                            class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
                             <div class="flex items-center mb-4">
-                                <div class="w-10 h-10 ted-red-gradient rounded-full flex items-center justify-center mr-3">
+                                <div
+                                    class="w-10 h-10 ted-red-gradient rounded-full flex items-center justify-center mr-3">
                                     <span class="text-xl">❓</span>
                                 </div>
                                 <h3 class="text-2xl font-bold gradient-text">What is TEDx?</h3>
@@ -439,9 +498,11 @@
                                 discussion and connection.
                             </p>
                         </div>
-                        <div class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
+                        <div
+                            class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
                             <div class="flex items-center mb-4">
-                                <div class="w-10 h-10 ted-red-gradient rounded-full flex items-center justify-center mr-3">
+                                <div
+                                    class="w-10 h-10 ted-red-gradient rounded-full flex items-center justify-center mr-3">
                                     <span class="text-xl">🌱</span>
                                 </div>
                                 <h3 class="text-2xl font-bold gradient-text">Why Youth?</h3>
@@ -454,62 +515,146 @@
                         </div>
                     </div>
 
-                    
 
-                <div  class="dark-glass p-10 rounded-3xl border border-red-500/30 bg-gradient-to-br from-red-900/20 to-transparent">
-                    <div class="flex items-center mb-8">
-                        <div class="w-12 h-12 ted-red-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-2xl">💎</span>
+
+
+                    <div
+                        class="dark-glass p-10 rounded-3xl border border-red-500/30 bg-gradient-to-br from-red-900/20 to-transparent">
+                        <div class="flex items-center mb-8">
+                            <div class="w-12 h-12 ted-red-gradient rounded-full flex items-center justify-center mr-4">
+                                <span class="text-2xl">💎</span>
+                            </div>
+                            <h2 class="text-3xl font-bold text-white">Our Values</h2>
                         </div>
-                        <h2 class="text-3xl font-bold text-white">Our Values</h2>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white text-sm">💡</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white mb-2">Innovation</h4>
+                                    <p class="text-gray-300">Encouraging creative thinking and novel approaches to
+                                        complex challenges</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white text-sm">🤝</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white mb-2">Inclusion</h4>
+                                    <p class="text-gray-300">Welcoming diverse voices and perspectives from all
+                                        backgrounds</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white text-sm">⚡</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white mb-2">Impact</h4>
+                                    <p class="text-gray-300">Inspiring action and positive change in our communities</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white text-sm">✨</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white mb-2">Integrity</h4>
+                                    <p class="text-gray-300">Maintaining authenticity and truth in all we do</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white text-sm">💡</span>
+
+                    <hr class="my-16 border-gray-700">
+
+                    <!-- About TEDx Section -->
+                    <div class="dark-glass p-10 rounded-3xl border border-gray-700 hover-glow mb-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 ted-red-gradient rounded-full flex items-center justify-center mr-4">
+                                <span class="text-2xl">🎯</span>
                             </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-white mb-2">Innovation</h4>
-                                <p class="text-gray-300">Encouraging creative thinking and novel approaches to
-                                    complex challenges</p>
-                            </div>
+                            <h2 class="text-3xl font-bold text-white">About TEDx</h2>
+                            <br>
                         </div>
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white text-sm">🤝</span>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-white mb-2">Inclusion</h4>
-                                <p class="text-gray-300">Welcoming diverse voices and perspectives from all
-                                    backgrounds</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white text-sm">⚡</span>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-white mb-2">Impact</h4>
-                                <p class="text-gray-300">Inspiring action and positive change in our communities</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-8 h-8 ted-red-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white text-sm">✨</span>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-white mb-2">Integrity</h4>
-                                <p class="text-gray-300">Maintaining authenticity and truth in all we do</p>
-                            </div>
-                        </div>
+
+                        <h3 class="text-2xl font-semibold mb-4 text-white">x = independently organized event</h3>
+                        <p class="text-gray-300 mb-4">
+                            In the spirit of discovering and spreading ideas, TEDx is a program of local, self-organized
+                            events that bring
+                            people together to share a TED-like experience. At a TEDx event, TED Talks video and live
+                            speakers combine to
+                            spark deep discussion and connection. These local, self-organized events are branded TEDx,
+                            where x =
+                            independently organized TED event. The TED Conference provides general guidance for the TEDx
+                            program, but
+                            individual TEDx events are self-organized. (Subject to certain rules and regulations.)
+                        </p>
                     </div>
+                    <!-- About TED Section -->
+                    <div class="dark-glass p-10 rounded-3xl border border-gray-700 hover-glow mb-8">
+                        <h2 class="text-2xl font-bold mb-4 gradient-text">About TED</h2>
+                        <p class="text-gray-300">
+                            TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and
+                            spreading ideas that spark
+                            conversation, deepen understanding and drive meaningful change. Our organization is devoted
+                            to curiosity,
+                            reason, wonder and the pursuit of knowledge — without an agenda. We welcome people from
+                            every discipline and
+                            culture who seek a deeper understanding of the world and connection with others, and we
+                            invite everyone to
+                            engage with ideas and activate them in your community.<br><br>
+                            <hr> <br>
+                            TED began in 1984 as a conference where Technology, Entertainment and Design converged, but
+                            today it spans a
+                            multitude of worldwide communities and initiatives exploring everything from science and
+                            business to education,
+                            arts and global issues. In addition to the TED Talks curated from our annual conferences and
+                            published on
+                            TED.com, we produce <a href="https://audiocollective.ted.com/"
+                                class="text-red-400 underline" target="_blank">original podcasts</a>, <a
+                                href="https://www.ted.com/series" class="text-red-400 underline" target="_blank">short
+                                video series</a>, <a href="https://ed.ted.com/" class="text-red-400 underline"
+                                target="_blank">animated educational lessons (TED-Ed)</a> and TV programs that are
+                            translated into more than
+                            100 languages and distributed via partnerships around the world. Each year, thousands of
+                            independently run <a href="https://www.ted.com/about/programs-initiatives/tedx-program"
+                                class="text-red-400 underline" target="_blank">TEDx events</a> bring people together to
+                            share ideas and bridge divides in communities on
+                            every continent. Through the <a href="https://www.audaciousproject.org/"
+                                class="text-red-400 underline" target="_blank">Audacious Project</a>, TED has helped
+                            catalyze more than $3 billion in funding for projects
+                            that seek to make the world more beautiful, sustainable and just. In 2020, TED launched <a
+                                href="https://countdown.ted.com/" class="text-red-400 underline"
+                                target="_blank">Countdown</a>, an
+                            initiative to accelerate solutions to the climate crisis and mobilize a movement for a
+                            net-zero future, and in
+                            2023 TED launched <a href="https://www.ted.com/about/programs-initiatives/teddemocracy"
+                                class="text-red-400 underline" target="_blank">TED Democracy</a> to spark a new kind of
+                            conversation focused
+                            on realistic pathways towards a more vibrant and equitable future. View a full list of <a
+                                href="https://www.ted.com/about/programs-initiatives" class="text-red-400 underline"
+                                target="_blank">TED’s
+                                many programs and initiatives</a>.
+                        </p>
+                        <br><br>
+                        <p>Follow TED on <a href="http://www.facebook.com/TED" class="text-red-400 underline"
+                                target="_blank">Facebook </a>, <a href="https://instagram.com/ted">Instagram</a>,
+                            <a href="https://www.linkedin.com/company/ted-conferences" class="text-red-400 underline"
+                                target="_blank">LinkedIn</a>, <a href="https://www.tiktok.com/@tedtoks?lang=en"
+                                class="text-red-400 underline" target="_blank">TikTok</a>, and <a
+                                href="http://twitter.com/TEDTalks" class="text-red-400 underline" target="_blank">X</a>
+                        </p>
+                    </div>
+
                 </div>
             </div>
-        </div>
 
     </div>
     </section>
@@ -980,130 +1125,9 @@
                 </div>
 
 
-                    
 
-                <!-- Student Volunteers 
-                <div class="mb-16">
-                    <div class="flex items-center justify-center mb-12">
-                        <div class="w-14 h-14 ted-red-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-xl">🌟</span>
-                        </div>
-                        <h2 class="text-3xl font-bold gradient-text">Student Volunteers</h2>
-                    </div>
 
-                    <div class="grid md:grid-cols-4 lg:grid-cols-6 gap-6">
-                        <div
-                            class="dark-glass p-6 rounded-xl text-center border border-gray-700 card-hover transition-all duration-300">
-                            <div
-                                class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">👨‍🎓</span>
-                            </div>
-                            <h4 class="font-semibold text-white text-sm">Volunteer Name</h4>
-                            <p class="text-gray-400 text-xs mt-1">Grade 12</p>
-                        </div>
-                        <div
-                            class="dark-glass p-6 rounded-xl text-center border border-gray-700 card-hover transition-all duration-300">
-                            <div
-                                class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">👩‍🎓</span>
-                            </div>
-                            <h4 class="font-semibold text-white text-sm">Volunteer Name</h4>
-                            <p class="text-gray-400 text-xs mt-1">Grade 11</p>
-                        </div>
-                        <div
-                            class="dark-glass p-6 rounded-xl text-center border border-gray-700 card-hover transition-all duration-300">
-                            <div
-                                class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">👨‍🎓</span>
-                            </div>
-                            <h4 class="font-semibold text-white text-sm">Volunteer Name</h4>
-                            <p class="text-gray-400 text-xs mt-1">Grade 12</p>
-                        </div>
-                        <div
-                            class="dark-glass p-6 rounded-xl text-center border border-gray-700 card-hover transition-all duration-300">
-                            <div
-                                class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">👩‍🎓</span>
-                            </div>
-                            <h4 class="font-semibold text-white text-sm">Volunteer Name</h4>
-                            <p class="text-gray-400 text-xs mt-1">Grade 10</p>
-                        </div>
-                        <div
-                            class="dark-glass p-6 rounded-xl text-center border border-gray-700 card-hover transition-all duration-300">
-                            <div
-                                class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">👨‍🎓</span>
-                            </div>
-                            <h4 class="font-semibold text-white text-sm">Volunteer Name</h4>
-                            <p class="text-gray-400 text-xs mt-1">Grade 11</p>
-                        </div>
-                        <div
-                            class="dark-glass p-6 rounded-xl text-center border border-gray-700 card-hover transition-all duration-300">
-                            <div
-                                class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">👩‍🎓</span>
-                            </div>
-                            <h4 class="font-semibold text-white text-sm">Volunteer Name</h4>
-                            <p class="text-gray-400 text-xs mt-1">Grade 12</p>
-                        </div>
-                    </div>
-                </div>
--->
-                <!-- Faculty Advisors
-                <div class="mb-16">
-                    <div class="flex items-center justify-center mb-12">
-                        <div class="w-14 h-14 ted-red-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-xl">🎓</span>
-                        </div>
-                        <h2 class="text-3xl font-bold gradient-text">Faculty Advisors</h2>
-                    </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div
-                            class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
-                            <div class="flex items-center mb-4">
-                                <div class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mr-4">
-                                    <span class="text-3xl">👨‍🏫</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Dr. Faculty Name</h3>
-                                    <p class="text-red-400 text-sm">Principal Advisor</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300 text-sm">Providing guidance and support to ensure the success of our
-                                TEDx event.</p>
-                        </div>
-                        <div
-                            class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
-                            <div class="flex items-center mb-4">
-                                <div class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mr-4">
-                                    <span class="text-3xl">👩‍🏫</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Prof. Faculty Name</h3>
-                                    <p class="text-red-400 text-sm">Academic Coordinator</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300 text-sm">Ensuring academic excellence and educational value in all
-                                our presentations.</p>
-                        </div>
-                        <div
-                            class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
-                            <div class="flex items-center mb-4">
-                                <div class="w-16 h-16 glass-effect rounded-full flex items-center justify-center mr-4">
-                                    <span class="text-3xl">👨‍🏫</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Mr. Faculty Name</h3>
-                                    <p class="text-red-400 text-sm">Event Supervisor</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300 text-sm">Overseeing event logistics and maintaining TEDx standards
-                                and protocols.</p>
-                        </div>
-                    </div>
-                </div>
- -->
                 <!-- Join Our Team -->
                 <div
                     class="dark-glass p-12 rounded-3xl text-center border border-red-500/30 bg-gradient-to-br from-red-900/20 to-transparent hover-glow">
@@ -1209,8 +1233,7 @@
                             class="ted-red-gradient text-white px-10 py-4 rounded-full text-lg font-semibold hover-glow transition-all duration-300 transform hover:scale-105">
                             Sponsorship Packages
                         </button>
-                        <button
-                            onclick="showPage('contact')"
+                        <button onclick="showPage('contact')"
                             class="glass-effect text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300 border border-gray-600">
                             Contact Us
                         </button>
@@ -1262,6 +1285,7 @@
                                         <option>Speaking Opportunity</option>
                                         <option>Sponsorship</option>
                                         <option>Media/Press</option>
+                                        <option>Tickets</option>
                                         <option>Other</option>
                                     </select>
                                 </div>
@@ -1343,18 +1367,23 @@
                         </div>
 
                         <!-- Map -->
-                        <div class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
+                        <div
+                            class="dark-glass p-8 rounded-2xl border border-gray-700 card-hover transition-all duration-300">
                             <div class="flex items-center mb-6">
-                                <div class="w-10 h-10 ted-red-gradient rounded-full flex items-center justify-center mr-3">
+                                <div
+                                    class="w-10 h-10 ted-red-gradient rounded-full flex items-center justify-center mr-3">
                                     <span class="text-xl">📍</span>
                                 </div>
                                 <h3 class="text-2xl font-bold gradient-text">Location</h3>
                             </div>
-                            <div class="bg-gray-800 h-56 rounded-xl flex items-center justify-center border border-gray-600 p-0 overflow-hidden">
+                            <div
+                                class="bg-gray-800 h-56 rounded-xl flex items-center justify-center border border-gray-600 p-0 overflow-hidden">
                                 <iframe
-
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.0318515886374!2d55.203073217102!3d25.065829918169943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d8f2e7d73ab%3A0x88e9b69044a0a624!2sJSS%20International%20School!5e0!3m2!1sen!2sae!4v1759572000815!5m2!1sen!2sae"
-                                    width="100%" height="220" style="filter: invert(1);border:0; border-radius: 0.75rem; min-width: 200px; min-height: 180px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    width="100%" height="220"
+                                    style="filter: invert(1);border:0; border-radius: 0.75rem; min-width: 200px; min-height: 180px;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -1463,5 +1492,3 @@
 
 
 </html>
-
-
