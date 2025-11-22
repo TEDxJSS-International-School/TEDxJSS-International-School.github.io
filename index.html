@@ -141,7 +141,7 @@
             backdrop-filter: blur(18px) saturate(180%);
             -webkit-backdrop-filter: blur(18px) saturate(180%);
             border-radius: 24px;
-            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            border: 1.5px solid rgba(0, 0, 0, 0);
             position: relative;
             overflow: hidden;
         }
@@ -153,7 +153,7 @@
             top: 10%;
             width: 80%;
             height: 80%;
-            background: radial-gradient(circle at 60% 40%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+            background: radial-gradient(circle at 60% 40%, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
             filter: blur(24px);
             opacity: 0.7;
             pointer-events: none;
@@ -216,7 +216,7 @@
     </style>
 </head>
 
-<body class="bg-gray-900 font-sans text-white">
+<body class="bg-black font-sans text-white">
     <!-- Navigation -->
     <nav class="dark-glass shadow-2xl sticky top-0 z-50 border-b border-gray-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -231,29 +231,29 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#"
-                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-gray-800 active"
+                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-black-800 active"
                             onclick="showPage('home')">Home</a>
                         <a href="#"
-                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-gray-800"
+                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-black-800"
                             onclick="showPage('about')">About TEDx </a>
                         <a href="#"
-                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-gray-800"
+                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-black-800"
                             onclick="showPage('team')">Our Team</a>
                         <a href="#"
-                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-gray-800"
+                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-black-800"
                             onclick="showPage('speakers')">Speakers</a>
                         <a href="#"
-                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-gray-800"
+                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-black-800"
                             onclick="showPage('sponsors')">Sponsors</a>
                         <a href="#"
-                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-gray-800"
+                            class="nav-link text-gray-300 hover:text-red-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-black-800"
                             onclick="showPage('contact')">Contact</a>
                     </div>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
                     <button onclick="toggleMobileMenu()"
-                        class="text-gray-300 hover:text-red-400 focus:outline-none p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                        class="text-gray-300 hover:text-red-400 focus:outline-none p-2 rounded-lg hover:bg-black-800 transition-colors">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -263,74 +263,50 @@
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 border-t border-gray-700">
+        <div id="mobile-menu" class="md:hidden hidden bg-black-800 border-t border-gray-700">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#"
-                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-gray-700 transition-colors"
+                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-black-700 transition-colors"
                     onclick="showPage('home'); toggleMobileMenu()">Home</a>
                 <a href="#"
-                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-gray-700 transition-colors"
+                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-black-700 transition-colors"
                     onclick="showPage('about'); toggleMobileMenu()">About TEDx</a>
                 <a href="#"
-                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-gray-700 transition-colors"
+                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-black-700 transition-colors"
                     onclick="showPage('team'); toggleMobileMenu()">Our Team</a>
                 <a href="#"
-                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-gray-700 transition-colors"
+                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-black-700 transition-colors"
                     onclick="showPage('speakers'); toggleMobileMenu()">Speakers</a>
                 <a href="#"
-                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-gray-700 transition-colors"
+                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-black-700 transition-colors"
                     onclick="showPage('sponsors'); toggleMobileMenu()">Sponsors</a>
                 <a href="#"
-                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-gray-700 transition-colors"
+                    class="block px-3 py-2 text-gray-300 hover:text-red-400 rounded-lg hover:bg-black-700 transition-colors"
                     onclick="showPage('contact'); toggleMobileMenu()">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Home Page -->
-    <div id="home" class="page active">
+    <div id="" class="page active">
         <!-- Hero Section -->
-        <section class="relative min-h-screen flex items-center justify-center overflow-auto py-20 bg-gray-900">
-            <!-- Animated Liquid Glass SVG Overlay -->
-            <svg class="absolute inset-0 w-full h-full" style="z-index:0; pointer-events:none;"
-                xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <filter id="liquidBlur" x="-20%" y="-20%" width="140%" height="140%">
-                        <feGaussianBlur stdDeviation="18" result="blur" />
-                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.18 0" />
-                    </filter>
-                </defs>
-                <ellipse cx="60%" cy="40%" rx="320" ry="180" fill="#fff" opacity="0.12" filter="url(#liquidBlur)">
-                    <animate attributeName="rx" values="320;340;320" dur="8s" repeatCount="indefinite" />
-                    <animate attributeName="ry" values="180;200;180" dur="8s" repeatCount="indefinite" />
-                </ellipse>
-                <ellipse cx="30%" cy="70%" rx="180" ry="90" fill="#fff" opacity="0.08" filter="url(#liquidBlur)">
-                    <animate attributeName="rx" values="180;200;180" dur="10s" repeatCount="indefinite" />
-                    <animate attributeName="ry" values="90;110;90" dur="10s" repeatCount="indefinite" />
-                </ellipse>
-            </svg>
+        <section class="relative min-h-screen flex items-center justify-center overflow-auto py-20 bg-black">
 
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="mb-12">
-                    <div class="w-40 h-40 mx-auto mb-8 liquid-glass flex items-center justify-center glow-red floating">
-                        <span class="text-5xl font-bold gradient-text">TEDx</span>
-                    </div>
-                </div>
+        
 
-                <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                <h1 class="text-7xl md:text-12xl font-bold mb-8 leading-tight">
                     <span class="gradient-text">Ideas Worth</span><br>
                     <span class="text-white">Spreading</span>
                 </h1>
 
-                <p class="text-2xl md:text-3xl mb-12 text-gray-300 font-light">
-                    TEDxJSS International School Youth
-                </p>
+                <br><br>
 
-                <div class="dark-glass p-8 rounded-2xl mb-12 max-w-4xl mx-auto border border-gray-700">
+                
                     <img src="assets\Banner.jpg" alt="TEDxJSS Banner" class="w-full h-auto rounded-xl mx-auto">
-                </div>
+                
 
-
+                <br><br>
 
 
                 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -353,7 +329,7 @@
 
 
         <!-- Quick Info -->
-        <section class="py-20 bg-gray-800 relative">
+        <section class="py-20 bg-black-800 relative">
             <div class="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-transparent ">
 
             </div>
@@ -451,7 +427,7 @@
 
     <!-- About Tedx Page -->
     <div id="about" class="page">
-        <section class="py-20 bg-gray-900 relative">
+        <section class="py-20 bg-black-900 relative">
             <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-red-900/10 to-transparent"></div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-10">
@@ -663,7 +639,7 @@
 
     <!-- Team Page -->
     <div id="team" class="page">
-        <section class="py-20 bg-gray-900 relative min-h-screen">
+        <section class="py-20 bg-black-900 relative min-h-screen">
             <div class="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent"></div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
@@ -708,7 +684,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -732,7 +708,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -756,7 +732,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -780,7 +756,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -804,7 +780,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -828,7 +804,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -852,7 +828,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -876,7 +852,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -900,7 +876,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -924,7 +900,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -948,7 +924,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -972,7 +948,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -996,7 +972,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -1020,7 +996,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -1044,7 +1020,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -1069,7 +1045,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -1093,7 +1069,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -1117,7 +1093,7 @@
                                         class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-700 transition-colors"
                                         title="LinkedIn">in</a>
                                     <a href="#"
-                                        class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-gray-700 transition-colors"
+                                        class="w-8 h-8 bg-black-600 rounded-full flex items-center justify-center text-white text-xs hover:bg-black-700 transition-colors"
                                         title="Email">@</a>
                                 </div>
                             </div>
@@ -1157,7 +1133,7 @@
 
     <!-- Speakers Page -->
     <div id="speakers" class="page">
-        <section class="py-20 bg-gray-900 relative min-h-screen">
+        <section class="py-20 bg-black-900 relative min-h-screen">
             <div class="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent"></div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
@@ -1386,7 +1362,7 @@
 
     <!-- Sponsors Page -->
     <div id="sponsors" class="page">
-        <section class="py-20 bg-gray-900 relative min-h-screen">
+        <section class="py-20 bg-black-900 relative min-h-screen">
             <div class="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent"></div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
@@ -1431,7 +1407,7 @@
     </div>
     <!-- Contact Page -->
     <div id="contact" class="page">
-        <section class="py-20 bg-gray-900 relative min-h-screen">
+        <section class="py-20 bg-black-900 relative min-h-screen">
             <div class="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
@@ -1457,17 +1433,17 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-3">Name</label>
                                     <input type="text" required
-                                        class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all">
+                                        class="w-full px-4 py-3 bg-black-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-3">Email</label>
                                     <input type="email" required
-                                        class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all">
+                                        class="w-full px-4 py-3 bg-black-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-3">Subject</label>
                                     <select
-                                        class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all">
+                                        class="w-full px-4 py-3 bg-black-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all">
                                         <option>General Inquiry</option>
                                         <option>Speaking Opportunity</option>
                                         <option>Sponsorship</option>
@@ -1479,7 +1455,7 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-3">Message</label>
                                     <textarea rows="5" required
-                                        class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all resize-none"></textarea>
+                                        class="w-full px-4 py-3 bg-black-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all resize-none"></textarea>
                                 </div>
                                 <button type="submit"
                                     class="w-full ted-red-gradient text-white py-4 rounded-xl text-lg font-semibold hover-glow transition-all duration-300 transform hover:scale-105">
@@ -1564,7 +1540,7 @@
                                 <h3 class="text-2xl font-bold gradient-text">Location</h3>
                             </div>
                             <div
-                                class="bg-gray-800 h-56 rounded-xl flex items-center justify-center border border-gray-600 p-0 overflow-hidden">
+                                class="bg-black-800 h-56 rounded-xl flex items-center justify-center border border-gray-600 p-0 overflow-hidden">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.0318515886374!2d55.203073217102!3d25.065829918169943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d8f2e7d73ab%3A0x88e9b69044a0a624!2sJSS%20International%20School!5e0!3m2!1sen!2sae!4v1759572000815!5m2!1sen!2sae"
                                     width="100%" height="220"
